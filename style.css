@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #EBE6D9;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.container h1, .container h2 {
+  color: #FF554A;
+}
+
+.container div {
+  margin-bottom: 10px;
+}
+
+.container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.container input, .container select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.container button:hover {
+  background-color: #45a049;
+}
+
+#amortizationTable {
+  margin-top: 20px;
+}
+
+#amortizationTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#amortizationTable th, #amortizationTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#amortizationTable th {
+  background-color: #f2f2f2;
+}
+
+#amortizationTable th:first-child {
+  width: 20%;
+}

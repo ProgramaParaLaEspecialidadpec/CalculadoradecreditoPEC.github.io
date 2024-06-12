@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Calculadora de crédito PEC</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Crédito PEC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #EBE6D9;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #FF554A;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #FF554A;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #FF4433;
+    }
+
+    #amortizationTable {
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    th:first-child {
+      width: 20%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Simulador de Crédito PEC</h1>
+    <div>
+      <label for="loanAmount">Valor de la obligación (En pesos colombianos):</label>
+      <input type="number" id="loanAmount" placeholder="Valor de la obligación" min="0" required>
+    </div>
+    <div>
+      <label for="loanTerm">Plazo de la obligación (meses):</label>
+      <input type="number" id="loanTerm" placeholder="Plazo de la obligación" min="1" required>
+    </div>
+    <div>
+      <label for="interestType">Seleccionar Tipo de interés:</label>
+      <select id="interestType">
+        <option value="mensual">Mensual</option>
+        <option value="anual">Anual</option>
+      </select>
+    </div>
+    <div>
+      <label for="interestRate">Tasa de interés (% vencido):</label>
+      <input type="number" id="interestRate" placeholder="Tasa de interés" min="0" required>
+    </div>
+    <button onclick="calculateAmortization()">Calcular</button>
+    <button onclick="resetForm()">Nuevo Cálculo</button>
+    <div id="amortizationTable">
+      <!-- Se llenará dinámicamente con JavaScript -->
+    </div>
+    <div id="results">
+      <h2>Resultados</h2>
+      <p>Total a pagar con intereses: <span id="totalPayment"></span></p>
+      <p>Unicamente a pagar de intereses: <span id="totalInterest"></span></p>
+      <p>Valor de la cuota a pagar mensual: <span id="monthlyPayment"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
